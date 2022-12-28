@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ipad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background:black;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  background:black;
+  color: white;
+    width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style the top navigation bar */
+.navbar a {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.div1 {
+
+width:33.33%;
+float:right;
+}
+.div2 {
+
+width:33.33%;
+float:left;
+}
+.div3 {
+
+width:33.33%;
+margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: ;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="container">
+<a href="my2.html"><img src="9.png"ait=""width="1000"height="360"><br></a>
+  <div class="centered"><h1 style="font-family:verdana;" >ipad</h1>
+  <p><h2>Best For The Best</h2></p></div>
+</div>
+
+  
+
+
+ <div class="navbar">
+  <a href="my2.html"><img src="apple.png"ait=""width="20"height="20"><br></a>
+   <a href="my2.html" >Home</a>
+  <a href="#news">News</a>
+  <a href="sign in.html" class="right">Sign in</a>
+   
+  <div class="dropdown">
+    <button class="dropbtn">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="mac.html"   target="_blank"   >mac</a>
+      <a href="ipad.html"    target="_blank"   >ipad</a>
+      <a href="iphone.html"    target="_blank"  >iphone</a>
+	  <a href="applewatch.html"    target="_blank"   >apple watch</a>
+	  <a href="airpods.html"   target="_blank"   >airpods</a>
+    </div>
+  </div>
+  
+   <a href="cart.html" class="left"> <img src="97.png"  ait=""width="20"height="20"> cart </a>
+  
+  
+  
+  
+  
+  
+ 
+  
+</div>
+  
+  
+</div>
+  
+  
+
+
+
+
+
+
+
+<div class="row">
+  
+ 
+  <div class="main">
+    <h1    style="font-family:verdana;" >ipad & ipad pro</h1>
+	 <h2   style="font-family:verdana;" > Design Pioneering engineering.</2>
+	 <h5>Oct 14, 2022,06:34pm EDT</h5>
+	<img src="first.jpg"ait=""width="1250"height="500">
+    
+    <div class="fakeimg" style="height:200px;"><p><h4>
+	Apple in October 2022 refreshed its iPad Pro lineup, introducing a range of small improvements 
+	including the M2 chip, Apple Pencil hover, ProRes video recording, Bluetooth 5.3, and Wi-Fi 6E.
+
+When it comes to design, the iPad Pro is unchanged, available in 11- and 12.9-inch sizes
+ with an all-screen design and an edge-to-edge display that does not include a Home button. Like the 2018, 2020, and 2021 iPad Pro models,
+ the 2022 iPad Pro features a TrueDepth camera system with Face
+ ID that uses facial recognition for biometric authentication and offers
+ a 12-megapixel front-facing camera for selfies and Center Stage during video calls.
+
+Both of the iPad Pro models feature an aluminum chassis in Silver or Space Gray with flat,
+ rounded edges that wrap around the Liquid Retina display.
+
+The 12.9-inch model features a Liquid Retina XDR mini-LED display, bringing 
+extreme dynamic range to the iPad Pro. The Liquid Retina XDR uses more than 
+10,000 LEDs across the entire back of the display and can deliver up to 1,000 nits of full-screen brightness,
+ 1,600 nits of peak brightness, a 1 million-to-1 contrast ratio, and true-to-life HDR to enhance creative workflows for a "stunning" visual experience.
+
+
+</h4></div>
+    <p> <h1>Design</h1></p>
+	
+	<p><h4>
+	The 2022 iPad Pro models received no major design refreshes and continue to look like the 2018,
+	2020, and 2021 iPad Pro models. The 11-inch iPad Pro measures in at 9.74 inches (247.6 mm) long and 7.02 inches (178.5 mm) wide,
+	while the 12.9-inch model measures in at 11.04 inches (280.6 mm) long and 8.46 inches (214.9 mm) wide, meaning 
+	that it is over an inch wider and taller than the smaller model.
+</h4></p>
+<img src="appleipad.jpg"ait=""width="1200"height="500"><br>
+    <p><h1     style="font-family:verdana;"  > Display </h1></p>
+    
+    
+     
+    <p><h4>                          
+	
+	
+	
+	Mini-LED Liquid Retina XDR Display
+The 12.9-inch iPad Pro has a mini-LED display that Apple calls the "Liquid Retina XDR display" with a resolution of 2732 x 2048 at 264 pixels per inch.
+ The Liquid Retina XDR display brings extreme dynamic range to the iPad Pro, 
+ offering a "stunning visual experience" with more true-to-life details and HDR, and it is the same as the 2021 iPad Pro display.
+
+Apple's mini-LED display on the iPad Pro uses more than 10,000 LEDs across the entire back of the display, 
+creating up to 1,000 nits of full-screen brightness, 1,600 nits of peak brightness, and a 1 million-to-1 contrast ratio.
+ This captures the brightest highlights and subtle details in even the darkest images, 
+ allowing creatives to view and edit true-to-life HDR content on a large, portable display.
+
+m1 ipad pro display
+	
+	
+
+	
+
+</h4></p>
+  <div class="fakeimg" style=""width="40"height="400"><img src="ipad-pro.jpg"ait=""width="1000"height="450"></div>
+
+<p><h4>
+
+
+
+The 11-inch iPad Pro has a resolution of 2388 x 1668 at 264 pixels per inch.
+ The display can deliver up to 600 nits brightness with just 1.8 percent reflectivity.
+ It has an antireflective and fingerprint-resistant coating, standard iPad display features.
+
+Wide color support ensures rich, vivid colors that are true to life and accurate, while True Tone adjusts the display to match the 
+white balance of the lighting in the room to make the screen easier on the eyes.
+
+ProMotion display technology with a 120Hz display refresh rate is included,
+ which makes content in motion on the screen smoother, crisper, and more responsive for scrolling, gaming, watching movies, and more.
+
+The iPad Pro's display refresh rate is dynamic and can change depending on what is on screen as a battery-saving measure.
+ When watching a movie or playing a game, the refresh rate is at 120Hz, but when reading a web page or looking at a photo,
+ a 120Hz refresh rate is not needed, so it adjusts accordingly.
+
+
+
+
+</h4></p>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <a href="contactus.html"  style="color:black;
+  background-color: transparent;
+  text-decoration:none ;" >  <h2   style="font-family:verdana;"  >Contact Us</h2></a>
+  
+  
+  
+  <a href="about us.html"  style="color:black;
+  background-color: transparent;
+  text-decoration:none ;" >  <h3   style="font-family:verdana;"  >About Us</h3></a>
+  
+  
+  
+  
+  Copyright © 2022 Apple Inc.    |All rights reserved.    |Privacy Policy    |Terms of Use     |Sales and Refunds   |Legal Site     |Map
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>

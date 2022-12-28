@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>applewatch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background:black;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  background:black;
+  color: white;
+    width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style the top navigation bar */
+.navbar a {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.div1 {
+
+width:33.33%;
+float:right;
+}
+.div2 {
+
+width:33.33%;
+float:left;
+}
+.div3 {
+
+width:33.33%;
+margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: ;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+</head>
+<body>
+
+<div class="container">
+<a href="my2.html"><img src="ultra.png"ait=""width="1000"height="360"><br></a>
+  <div class="centered"><h1  style="font-family:verdana;" , style="background-color:powderblue;"  >Apple Watch</h1>
+  <p><h1>Best For Best</h1></p></div>
+</div>
+
+  
+
+
+ <div class="navbar">
+  <a href="my2.html"><img src="apple.png"ait=""width="20"height="20"><br></a>
+   <a href="my2.html">Home</a>
+  <a href="#news">News</a>
+  <a href="sign in.html" class="right">Sign in</a>
+   
+  <div class="dropdown">
+    <button class="dropbtn">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="mac.html"   target="_blank"   >mac</a>
+      <a href="ipad.html"    target="_blank"  >ipad</a>
+      <a href="iphone.html"    target="_blank"  >iphone</a>
+	  <a href="applewatch.html"   target="_blank"  >apple watch</a>
+	  <a href="airpods.html"   target="_blank"   >airpods</a>
+    </div>
+  </div>
+  
+  
+   <a href="cart.html" class="left"> <img src="97.png"  ait=""width="20"height="20"> cart </a>
+  
+  
+  
+  
+  
+  
+ 
+  
+</div>
+  
+  
+  
+</div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  
+ 
+  <div class="main">
+    <h1    style="font-family:verdana;" >Apple Watch Ultra </h1>
+	 <h2   style="font-family:verdana;" > Design Pioneering engineering.</2>
+	 <h5>Oct 14, 2022,06:34pm EDT</h5>
+	<img src="ultra.png"ait=""width="1200"height="500">
+    
+    <div class="fakeimg" style="height:200px;"><p><h4>
+	Meet the most rugged and capable Apple Watch ever.
+ With a robust titanium case, precision dual-frequency GPS, up to 36 hours of battery life,
+ 1 the freedom of cellular,2 and three specialized bands made for athletes and adventurers of all kinds. 
+ To build the ultimate sports watch, we crafted every element with painstaking attention to detail for unparalleled performance.
+ Titanium strikes the perfect balance between weight, ruggedness, and corrosion resistance.
+ The new case design rises up to surround the flat sapphire crystal and protect it from edge impacts.
+ The Digital Crown is larger and the side button is raised from the case, making them easier to use while you’re wearing gloves.
+ 49mm titanium case
+Water resistance 100m*
+Tested to MIL-STD 810H3
+IP6X dust resistance4
+
+The biggest and brightest Apple Watch display. The Always‑On Retina display is 2000 nits at its peak and twice as bright as any other Apple Watch. 
+The bigger display provides more room for workout metrics and detail‑packed watch faces. 
+The Wayfinder face lets you rotate the Digital Crown to activate Night Mode for better viewing in low light situations.
+ </h4></p>
+
+</h4></div>
+    <p> <h1>GPS </h1></p>
+	
+	
+	
+    <p><h4>      Ready for Action. The new Action button gives you quick, physical control over a variety of functions. It’s customizable and can do things like control a workout, mark a Compass Waypoint, or begin a dive. Just like you, it’s full of potential.
+                   Everything in its place. An essential and versatile tool that fits on your wrist, Apple Watch Ultra packs incredible capability into a surprisingly small space.
+                     The GPS dilemma. For most people, a traditional GPS solution with just L1 GPS works well most of the time. But it can be tricky when tall buildings, trees, or dense foliage block satellites. The newer L5 GPS enables advanced signal processing, reducing many errors and providing a more consistent signal in environments like dense cities.
+Precision dual‑frequency GPS
+L1 and L5 GPS for incredible accuracy and precise metrics   
+</h4></p>
+<img src="2x.jpg"ait=""width="1200"height="500"><br>
+    <p><h1     style="font-family:verdana;"  > Battery </h1></p>
+    
+    
+     
+    <p><h4>                          
+	
+	
+	
+	
+	
+	
+	Battery life for days. When you’re on the second day of a backpacking trip, 
+	the final leg of a triathlon, or diving along a coral reef, the last thing you want to think about is running out of battery.
+	Up to
+36hrs of normal use Up to 60hrs on low power settings
+	With longer battery life than ever, you can take on almost anything and have energy to spare.Hike, run, dive. There’s a band for that.
+	Making the ultimate sports watch for athletes of all kinds required a unique approach.
+	That’s why specialized bands for outdoor adventures, endurance training, and water sports are as meticulously crafted as the watch itself.
+	
+	
+	
+
+</h4></p>
+  <div class="fakeimg" style=""width="40"height="400"><img src="apple3.jpg"ait=""width="1000"height="450"></div>
+
+<p><h4>
+Two frequencies. One precise solution. Apple Watch Ultra integrates both L1 and L5 GPS into a new antenna design for greater range with incredible power efficiency. 
+It combines data from these two frequencies to provide amazingly accurate distance, pace, and route calculations.
+The most accurate GPS in dense urban environments.
+ The dual-frequency system combines with Apple Maps to include road, bike, and trail routes that better identify actual locations. Accuracy is boosted by new satellite and signal models.
+ And a custom, advanced algorithm makes optimal use of available satellite signals.
+
+
+
+
+
+
+
+
+</h4></p>
+
+  </div>
+</div>
+
+
+
+</div>
+<div class="footer">
+  <a href="contactus.html"  style="color:black;
+  background-color: transparent;
+  text-decoration:none ;" >  <h2   style="font-family:verdana;"  >Contact Us</h2></a>
+
+
+
+<a href="about us.html"  style="color:black;
+  background-color: transparent;
+  text-decoration:none ;" >  <h3   style="font-family:verdana;"  >About Us</h3></a>
+
+
+
+
+  
+  Copyright © 2022 Apple Inc.    |All rights reserved.    |Privacy Policy    |Terms of Use     |Sales and Refunds   |Legal Site     |Map
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
